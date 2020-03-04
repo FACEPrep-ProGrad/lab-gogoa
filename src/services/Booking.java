@@ -9,7 +9,8 @@ public class Booking{
 	public double booking(int noOfPersons,int rates)
 	{
 	
-		return noOfPersons*rates;
+        double d=(double)noOfPersons*rates;
+        return d;
 		
 }
 	

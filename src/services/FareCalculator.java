@@ -48,6 +48,8 @@ public class FareCalculator extends Booking
 			String triptype=flight.getTriptype();
 			
 			double data=0;
+			
+			//condition check
 			if(triptype=="One-way")
 			{
 			data =b.booking(noOfPersons, rates);
@@ -63,7 +65,8 @@ public class FareCalculator extends Booking
 		}
 		
 		//method train
-		public double book(Train train) {
+		public double book(Train train)
+		{
 			int noOfPersons=train.getNoOfPersons();
 			String berth=train.getBerth();
 			int rates=train.getRates();
