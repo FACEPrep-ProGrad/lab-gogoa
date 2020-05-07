@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+//Uncomment the below code to test your application
 
 import model.Flight;
 import java.time.LocalDate;
@@ -10,9 +10,9 @@ import org.junit.Test;
 public class TestFlight {
 	LocalDate ld = LocalDate.of(2020, 02, 03);
 	LocalDate ld1 = LocalDate.of(2020, 02, 05);
-	Flight flight = new Flight(2, 10000, "economy", ld, ld1,"one-way");
+	Flight flight = new Flight(2, "economy", 10000, ld, ld1,"one-way");
 
-	@Test
+//	@Test
 	public void testGetNoOfPersonMethod() {
 		flight.setNoOfPersons(5);
 		assertEquals(5, flight.getNoOfPersons());
@@ -26,7 +26,7 @@ public class TestFlight {
 		}
 	}
 
-	@Test
+	//@Test
 	public void testGetRateMethod() {
 		flight.setRates(12000);
 		assertEquals(12000, flight.getRates());
@@ -40,7 +40,7 @@ public class TestFlight {
 		}
 	}
 
-	@Test
+	//@Test
 	public void testGetClassType() {
 		flight.setClassType("economy");
 		assertEquals("economy", flight.getClassType());
@@ -51,7 +51,7 @@ public class TestFlight {
 		}
 	}
 
-	@Test
+	//@Test
 	public void testSetDate() {
 		try {
 			flight.setFrom(null);
@@ -62,4 +62,4 @@ public class TestFlight {
 	}
 }
 
-*/
+
