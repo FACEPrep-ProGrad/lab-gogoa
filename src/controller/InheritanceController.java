@@ -9,32 +9,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-@WebServlet(urlPatterns= {"/index"})
+@WebServlet(urlPatterns = { "/index" })
 public class InheritanceController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-  
-    public InheritanceController() {
-        super();
-      
-    }
 
+	public InheritanceController() {
+		super();
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-				
-				RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
-			
-				dispatcher.forward(request, response);
-		
 	}
 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 
+		dispatcher.forward(request, response);
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request,response);
-			
-	
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doGet(request, response);
+
 	}
 }
