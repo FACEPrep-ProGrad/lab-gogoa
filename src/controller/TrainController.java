@@ -1,5 +1,8 @@
 package controller;
 
+import model.Train;
+import services.FareCalculator;
+
 import java.io.IOException;
 import java.time.LocalDate;
 
@@ -31,7 +34,7 @@ public class TrainController extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-/*		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
+		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String berth=request.getParameter("berth");
 		String date=request.getParameter("to");
 		System.out.println(numberOfPersons);
@@ -68,6 +71,6 @@ public class TrainController extends HttpServlet {
 		request.setAttribute("trainfare", trainfare);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/trainView.jsp");
 		dispatcher.forward(request, response);
-	*/}
+	}
 
 }

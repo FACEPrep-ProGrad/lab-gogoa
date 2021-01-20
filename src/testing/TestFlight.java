@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+// Uncomment the below code to test your application
 
 import model.Flight;
 import java.time.LocalDate;
@@ -11,7 +11,8 @@ public class TestFlight {
 	LocalDate ld = LocalDate.of(2020, 02, 03);
 	LocalDate ld1 = LocalDate.of(2020, 02, 05);
 	Flight flight = new Flight(2, 10000, "economy", ld, ld1,"one-way");
-
+	
+	
 	@Test
 	public void testGetNoOfPersonMethod() {
 		flight.setNoOfPersons(5);
@@ -62,4 +63,3 @@ public class TestFlight {
 	}
 }
 
-*/
