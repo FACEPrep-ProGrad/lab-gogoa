@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+// Uncomment the below code to test your application
 
 import static org.junit.Assert.*;
 
@@ -65,6 +65,7 @@ public class TestFareCalculator {
 		LocalDate ld = LocalDate.of(2020, 02, 03);
 		LocalDate ld1 = LocalDate.of(2020, 02, 05);
 		Flight flight = new Flight(2, 10000, "economy", ld, ld1,"one-way");
+		//System.out.println(flight.getClassType());
 		assertEquals(20000,fare.book(flight),0);
 		try {
 			Flight flight1 = new Flight(0, 0, null, null, null,null);
@@ -89,4 +90,4 @@ public class TestFareCalculator {
 		}
 	}
 }
-*/
+
